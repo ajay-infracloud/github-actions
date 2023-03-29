@@ -1,7 +1,7 @@
 name: First Project
 on: [push, workflow_dispatch]
 jobs:
-  greeting:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
