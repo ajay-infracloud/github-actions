@@ -1,17 +1,22 @@
 name: First Project
 on: push
 jobs:
-  build:
+  HelloWorld:
     runs-on: ubuntu-latest
     steps:
       - name: Hello World
         run: echo "Hello World"
-      # - name: Checkout code
-      #   uses: actions/checkout@v3 
-      # - name: Install nodejs
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: 16
-      # - name: Install dependencies for node
-      #   run: npm install
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 
+      - name: Install nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies for node
+        run: npm install
+      - name: Build npm
+        run: npm build
       
