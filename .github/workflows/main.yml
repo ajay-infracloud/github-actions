@@ -1,5 +1,5 @@
 name: First Project
-on: [push, workflow_dispatch]
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,4 +12,5 @@ jobs:
           node-version: 16
       - name: Install dependencies
         run: npm install
+      
       
