@@ -5,7 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: ajay-infracloud/github-actions
     backstage.io/kubernetes-id: github-actions
-    # backstage.io/kubernetes-cluster: kind-cluster-2
+    backstage.io/kubernetes-cluster: kind-cluster-2
 spec:
   type: service
   lifecycle: unknown
