@@ -5,6 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: ajay-infracloud/github-actions
     'backstage.io/kubernetes-label-selector': 'app=example'
+    argocd/app-name: github-actions
 spec:
   type: service
   lifecycle: unknown
